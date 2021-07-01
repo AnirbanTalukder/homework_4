@@ -1,10 +1,10 @@
-# Homework 3
+# Homework 4
 
 This is the 4th homework for the coding bootcamp
 
 ## Running the code
 
-The codes are linked with the index.html which will render the js and generate the password
+The codes are linked with the index.html which will render the js and code challenge
 
 ## Demo
 
