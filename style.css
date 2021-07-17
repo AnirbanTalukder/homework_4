@@ -1,0 +1,47 @@
+body,
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    height: 100%;
+}
+
+.game-box {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0., 0, 0, 0.23);
+}
+
+.answer-item {
+    background: rgb(223, 201, 7);
+    width: 90%;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 3px;
+}
+
+#btn-start {
+    border: none;
+    padding: 6px 0 6px 0;
+    border-radius: 8px;
+    background: #3a03d1;
+    font: bold 40px;
+    color: #fff;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #3a03d1;
+    border-color: #3a03d1;
+}
+
+.btn-block {
+    display: block;
+    width: fit-content;
+}
+
+.text-info {
+    color: #010202!important;
+}
+
+.code-title {
+    width: 100%;
+    text-align: center;
+}
