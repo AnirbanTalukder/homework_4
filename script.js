@@ -1,3 +1,5 @@
+//initializing variable
+
 var quizQuestions = document.getElementById("quiz-questions");
 var timer = document.getElementById("timer");
 var btnStart = document.getElementById("btn-start");
@@ -17,6 +19,8 @@ var timeinterval;
 // var submitresult = document.getElementById("submitresult");
 var allScores = [];
 var storedScores = JSON.parse(localStorage.getItem("userData"));
+
+//Storing all the questions in local file
 var questions = [{
         title: "Commonly used data type Do Not include:---",
         choices: ["strings", "boolean", "alerts", "numbers"],
@@ -45,6 +49,8 @@ var questions = [{
 ]
 btnStart.addEventListener("click", startQuiz);
 
+
+//Calling question and timer at same time to start the quiz
 function startQuiz() {
     if (storedScores !== null) {
         allScores = storedScores;
@@ -65,8 +71,8 @@ btnScore.addEventListener("click", function() {
     scorePage(name, score)
 });
 
-// Time set
 
+//setting game timer
 function gametime() {
 
     timeinterval = setInterval(function() {
@@ -81,6 +87,7 @@ function gametime() {
 
 }
 
+//Storing scores in score html to retreive later
 function scorePage(a, b) {
 
     var userData = {
@@ -93,6 +100,7 @@ function scorePage(a, b) {
     location.href = "score.html";
 }
 
+//Reading all the question from the filw and disply in UI
 function displayQuestion(question) {
     titleitem.innerText = question.title
     question.choices.forEach(element => {
@@ -105,7 +113,7 @@ function displayQuestion(question) {
     });
 }
 
-
+//B ased on user response moving to next question
 function displaynextQuestion(e) {
     currentindex++
     if (currentindex < questions.length) {
@@ -125,6 +133,7 @@ function displaynextQuestion(e) {
     }
 }
 
+//This will identify the answer correct or worong
 function correction(response) {
 
     if (response) {
@@ -145,7 +154,7 @@ function correction(response) {
 }
 
 
-
+//Calling this function to abort the game and setting the score to alert, also removing all the conntents
 function endgame() {
     score = count;
     myScore.innaText = count
