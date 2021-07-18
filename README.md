@@ -1,4 +1,4 @@
-# Homework 4- Code-Quiz
+# Homework 4 - Code-Quiz
 
 This is the 4th homework for the coding bootcamp
 
@@ -11,10 +11,10 @@ The application has a few multiple choice questions and the ability to store top
 At the end of the quiz (when the user answers all questions or time is up), upon viewing their score, the user is able to enter their initials to add their score to the High Scores list. Once they enter their initials, the scoreboard will appear with an option to clear the board or restart the quiz.
 
 ### Has responsive layout for: 
-** Small devices (landscape phones, 576px and up)
-** Medium devices (tablets, 768px and up)
-** Large devices (desktops, 992px and up)
-** Extra large devices (large desktops, 1200px and up)
+* Small devices (landscape phones, 576px and up)
+* Medium devices (tablets, 768px and up)
+* Large devices (desktops, 992px and up)
+* Extra large devices (large desktops, 1200px and up)
 
 ### To Execute File:
 > Open in browser
